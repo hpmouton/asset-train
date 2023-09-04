@@ -29,9 +29,9 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->longText('description');
-            $table->foreign('category_id')->references('id')->on('asset_categories')->onDelete('cascade');
-            $table->dateTime('acquistition_date')->nullable()->default(new DateTime());
-            $table->foreign('division_id')->references('id')->on('divisions')->onDelete('cascade');
+            $table->foreignId('category_id')->onDelete('cascade');
+            $table->dateTime('acquistition_date')->nullable();
+            $table->foreignId('division_id')->onDelete('cascade');
             $table->string('manufacturer');
             $table->string('serial_number');
             $table->tinyInteger('status');

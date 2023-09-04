@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('division_name');
             $table->string('division_location');
-            $table->foreign('dep_id')->references('id')->on('departments')->onDelete('cascade');
+            $table->foreignId('dep_id')->onDelete('cascade');
             $table->timestamps();
         });
     }

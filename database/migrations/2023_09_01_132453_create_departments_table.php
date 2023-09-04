@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('departments', function (Blueprint $table) {
             $table->id();
             $table->string('department_name');
-            $table->foreign('org_id')->references('id')->on('organisations')->onDelete('cascade');
+            $table->foreignId('org_id')->onDelete('cascade');
             $table->timestamps();
         });
     }
