@@ -6,7 +6,7 @@ use App\models\AssetManagement\AssetCategory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 //import models
 use Illuminate\Database\Eloquent\Model;
-
+use App\Models\Utilities\Division;
 class Asset extends Model
 {
     use HasFactory;
