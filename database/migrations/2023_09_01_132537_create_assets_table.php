@@ -30,7 +30,7 @@ return new class extends Migration
             $table->string('name');
             $table->longText('description');
             $table->foreignId('category_id')->onDelete('cascade');
-            $table->dateTime('acquistition_date')->nullable();
+            $table->dateTime('acquisition_date')->nullable();
             $table->foreignId('division_id')->onDelete('cascade');
             $table->string('manufacturer');
             $table->string('serial_number');

@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('organisations', function (Blueprint $table) {
             $table->id();
             $table->string('organisation_name')->default('Asset-Train');
-            $table->string('organisation_logo');
+            $table->string('organisation_logo')->nullable();
             $table->timestamps();
         });
     }
