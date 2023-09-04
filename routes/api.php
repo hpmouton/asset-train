@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 
 //controller imports
 use App\Http\Controllers\AssetManagement\AssetController;
+use App\Http\Controllers\AssetManagement\AssetCategoryController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +23,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::resource('asset', AssetController::class);
+Route::resource('assetcategory', AssetCategoryController::class);
+
