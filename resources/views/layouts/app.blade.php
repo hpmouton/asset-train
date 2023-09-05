@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name') }}</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -19,8 +19,10 @@
     @livewireStyles
 </head>
 
-<body class="font-sans antialiased">
+<body class="font-sans antialiased" x-data="{ open: false }">
     <x-banner />
+    {{-- <x-sidebar /> --}}
+
 
     <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
         @livewire('navigation-menu')
@@ -37,7 +39,8 @@
 
 
         <!-- Page Content -->
-        <main>
+        <main class="ml-72">
+
             {{ $slot }}
         </main>
     </div>
@@ -46,5 +49,10 @@
 
     @livewireScripts
 </body>
+<footer class=" py-4 text-center text-slate-800">
+    <p class="text-sm">
+        Asset Train Developed by Telecom Namibia &copy; {{ date('Y') }}
+    </p>
+</footer>
 
 </html>

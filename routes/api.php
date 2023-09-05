@@ -31,5 +31,3 @@ Route::resource('myorganisation', OrganisationController::class);
 Route::resource('department', DepartmentController::class);
 Route::resource('division', DivisionController::class);
 
-
-
