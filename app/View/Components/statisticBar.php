@@ -11,9 +11,11 @@ class statisticBar extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public $assets;
+    public function __construct($assets)
     {
         //
+        $this->assets = $assets;
     }
 
     /**

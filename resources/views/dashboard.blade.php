@@ -10,7 +10,7 @@
 
 
             <div class="container">
-                <x-statistic-bar />
+                <x-statistic-bar :assets="$assets" />
 
             </div>
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-xl sm:rounded-lg">
