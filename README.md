@@ -33,17 +33,7 @@ Asset Train is a powerful, cloud-based Asset Management System Software as a Ser
 
 - **Scalability:** Whether you have a small business or a large enterprise, Asset Train can scale to meet your asset management needs.
 
-## Getting Started
 
-To get started with Asset Train, sign up for an account on our website [insert link]. You can also explore our documentation to learn more about how to use our service effectively.
-
-## Contributing
-
-We welcome contributions from the community to make Asset Train even better. If you'd like to contribute, please read our [Contribution Guidelines](link-to-contributing-guidelines).
-
-## Support
-
-If you encounter any issues, have questions, or need assistance, please reach out to our support team at [support@email.com] or visit our [Support Page](link-to-support).
 
 ## License
 
